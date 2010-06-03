@@ -1,0 +1,222 @@
+# French translation of Drupal (general)
+# Copyright Jean-Philippe Fleury <contact@jpfleury.net>
+# Generated from files:
+#  syndication.module,v 1.58.2.4 2009/02/23 06:30:58 aaron1234nz
+#  syndication.info,v 1.2.2.1 2009/01/18 06:14:53 aaron1234nz
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"POT-Creation-Date: 2009-03-14 11:36+1300\n"
+"PO-Revision-Date: 2009-03-14 15:28-0500\n"
+"Last-Translator: Jean-Philippe Fleury <contact@jpfleury.net>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n>1);\n"
+
+#: syndication.module:42
+msgid "Syndicate (more)"
+msgstr "Syndiquer (plus)"
+
+#: syndication.module:47
+msgid "Syndicate"
+msgstr "Syndiquer"
+
+#: syndication.module:56
+msgid "More"
+msgstr "Plus"
+
+#: syndication.module:57
+msgid "more"
+msgstr "plus"
+
+#: syndication.module:57
+msgid "Review all XML feeds exported by %sn"
+msgstr "Vérifier tous les flux XML exportés par %sn"
+
+#: syndication.module:72;154;170;420;429
+msgid "Atom feed"
+msgstr "Fil Atom"
+
+#: syndication.module:72
+msgid "Atom front page feed"
+msgstr "Flux Atom de la page d'accueil"
+
+#: syndication.module:77;410
+msgid "Blogs"
+msgstr "Blogues"
+
+#: syndication.module:82
+msgid "External feeds"
+msgstr "Fils externes"
+
+#: syndication.module:94
+msgid "Categories"
+msgstr "Catégories"
+
+#: syndication.module:101;456
+msgid "Views"
+msgstr "Vues"
+
+#: syndication.module:116
+msgid "Sorry, there are no feeds available."
+msgstr "Désolé, aucun flux n'est disponible."
+
+#: syndication.module:128
+msgid ""
+"At <i>%sn</i>, all users have a <a href='!rss'>RSS</a> and <a href='!"
+"atom'>Atom<a> feed for their blog, as well as each individual user."
+msgstr ""
+"À <i>%sn</i>, tous les utilisateurs ont un flux <a href='!rss'>RSS</a> et un "
+"flux <a href='!atom'>Atom<a> pour leur blogue, tout comme chaque utilisateur."
+
+#: syndication.module:132
+msgid ""
+"At <i>%sn</i>, <a href='!all'>all users</a> and each user, have an RSS feed "
+"for their blog."
+msgstr ""
+"À <i>%sn</i>, <a href='!all'>tous les utilisateurs</a> ainsi que chaque "
+"utilisateur ont un flux RSS pour leur blogue."
+
+#: syndication.module:137
+msgid "Search users"
+msgstr "Rechercher des utilisateurs"
+
+#: syndication.module:139
+msgid "Enter a username to view her blog feed, and other details."
+msgstr ""
+"Entrer un nom d'utilisateur pour voir le flux de son blogue et d'autres "
+"informations."
+
+#: syndication.module:142
+msgid "Search"
+msgstr "Rechercher"
+
+#: syndication.module:153;168
+msgid "RSS feed"
+msgstr "Flux RSS"
+
+#: syndication.module:158
+msgid "Recent Blog Authors"
+msgstr "Blogueurs récents"
+
+#: syndication.module:172
+msgid "blog"
+msgstr "blogue"
+
+#: syndication.module:205
+msgid "Combine terms into a single feed"
+msgstr "Combiner des termes dans un seul flux RSS"
+
+#: syndication.module:251
+msgid ""
+"You can subscribe to more than one category in a single RSS feed.  Please "
+"select the RSS feeds you would like to subscribe to then press the "
+"\"Generate feed\" button."
+msgstr ""
+"Vous pouvez vous abonner à plus d'une catégorie dans un seul flux RSS. Pour "
+"ce faire, sélectionnez les flux RSS auxquels vous voulez vous abonner et "
+"cliquez ensuite sur le bouton \"Générer le flux\"."
+
+#: syndication.module:289
+msgid "Generate feed"
+msgstr "Générer le flux"
+
+#: syndication.module:321
+msgid "Username not found."
+msgstr "Nom d'utilisateur inconnu."
+
+#: syndication.module:330
+msgid ""
+"In addition to displaying RSS feeds, <i>%sn</i> offers <a href=\"!link"
+"\">this OPML</a> which lists all RSS feeds that are collected here."
+msgstr ""
+"En plus de l'affichage des flux RSS, <i>%sn</i> offre <a href=\"!link\">ce "
+"fichier OPML</a>, qui liste tous les flux RSS réunis ici."
+
+#: syndication.module:401
+msgid "Columns"
+msgstr "Colonnes"
+
+#: syndication.module:403
+msgid "The number of columns to use on the display page?"
+msgstr "Le nombre de colonnes dans l'affichage de la page."
+
+#: syndication.module:412
+msgid "Should be blogs be included on the syndication page?"
+msgstr ""
+"Est-ce que les blogues devraient être inclus dans la page de syndication"
+
+#: syndication.module:422
+msgid "Should be front page atom feed be included on the syndication page?"
+msgstr ""
+"Est-ce que le flux Atom de la page d'accueil devrait être inclus dans la "
+"page de syndication?"
+
+#: syndication.module:431
+msgid "Should be aggregator OPML feed be included on the syndication page?"
+msgstr ""
+"Est-ce que l'agrégateur de flux OPML devrait être inclus dans la page de "
+"syndication?"
+
+#: syndication.module:441
+msgid "Vocabularies"
+msgstr "Vocabulaires"
+
+#: syndication.module:444
+msgid ""
+"Select the vocabularies which should appear in the <em>Categories</em> block "
+"on the <a href=\"@syndication\">syndication page</a>"
+msgstr ""
+"Sélectionne les vocabulaires qui devraient apparaître dans le bloc "
+"<em>Catégories</em> sur la <a href=\"@syndication\">page de syndication</a>"
+
+#: syndication.module:459
+msgid ""
+"Select the views which should appear in the <em>Views</em> block on the <a "
+"href=\"@syndication\">syncidation page</a>"
+msgstr ""
+"Sélectionne les vues qui devraient apparaître dans le bloc <em>Vues</em> sur "
+"la <a href=\"@syndication\">page de syndication</a>"
+
+#: syndication.module:476
+msgid "Other"
+msgstr "Autre"
+
+#: syndication.module:479
+msgid ""
+"Select the other feeds which should appear in the <em>Other</em> block on "
+"the <a href=\"@syndication\">syncidation page</a>"
+msgstr ""
+"Sélectionne les autres flux qui devraient apparaître dans le bloc <em>Autre</"
+"em> sur la <a href=\"@syndication\">page de syndication</a>"
+
+#: syndication.module:495
+msgid "Adds a Syndication block, links to more feeds"
+msgstr "Ajoute a bloc de syndication, et lie vers d'autres flux"
+
+#: syndication.module:17
+msgid "RSS feeds"
+msgstr "Flux RSS"
+
+#: syndication.module:23
+msgid "RSS feed syndication"
+msgstr "Syndication de flux RSS"
+
+#: syndication.module:29
+msgid "RSS feed builder"
+msgstr "Générateur de flux RSS"
+
+#: syndication.module:0
+msgid "syndication"
+msgstr "syndication"
+
+#: syndication.info:0
+msgid "Syndication"
+msgstr "Syndication"
+
+#: syndication.info:0
+msgid "Module to consolidate RSS feeds on to a single page."
+msgstr "Module réunissant tous les flux RSS sur une seule page."

@@ -1,0 +1,209 @@
+# $Id: syndication-module.pot,v 1.2.4.4 2009/04/17 10:21:07 aaron1234nz Exp $
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  syndication.module,v 1.58.2.10 2009/04/09 06:10:07 aaron1234nz
+#  syndication.info,v 1.2.2.1 2009/01/18 06:14:53 aaron1234nz
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2009-04-17 22:19+1200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: syndication.module:48
+msgid "Syndicate (more)"
+msgstr ""
+
+#: syndication.module:53
+msgid "Syndicate"
+msgstr ""
+
+#: syndication.module:62
+msgid "More"
+msgstr ""
+
+#: syndication.module:63
+msgid "more"
+msgstr ""
+
+#: syndication.module:63
+msgid "Review all XML feeds exported by %sn"
+msgstr ""
+
+#: syndication.module:78;160;176;453;462
+msgid "Atom feed"
+msgstr ""
+
+#: syndication.module:78
+msgid "Atom front page feed"
+msgstr ""
+
+#: syndication.module:83;443
+msgid "Blogs"
+msgstr ""
+
+#: syndication.module:88
+msgid "External feeds"
+msgstr ""
+
+#: syndication.module:100
+msgid "Categories"
+msgstr ""
+
+#: syndication.module:107;497
+msgid "Views"
+msgstr ""
+
+#: syndication.module:122
+msgid "Sorry, there are no feeds available."
+msgstr ""
+
+#: syndication.module:134
+msgid "At <i>%sn</i>, all users have a <a href='!rss'>RSS</a> and <a href='!atom'>Atom<a> feed for their blog, as well as each individual user."
+msgstr ""
+
+#: syndication.module:138
+msgid "At <i>%sn</i>, <a href='!all'>all users</a> and each user, have an RSS feed for their blog."
+msgstr ""
+
+#: syndication.module:143
+msgid "Search users"
+msgstr ""
+
+#: syndication.module:145
+msgid "Enter a username to view her blog feed, and other details."
+msgstr ""
+
+#: syndication.module:148
+msgid "Search"
+msgstr ""
+
+#: syndication.module:159;174
+msgid "RSS feed"
+msgstr ""
+
+#: syndication.module:164
+msgid "Recent Blog Authors"
+msgstr ""
+
+#: syndication.module:178
+msgid "blog"
+msgstr ""
+
+#: syndication.module:211
+msgid "Combine terms into a single feed"
+msgstr ""
+
+#: syndication.module:260
+msgid "You can subscribe to more than one category in a single RSS feed.  Please select the RSS feeds you would like to subscribe to then press the \"Generate feed\" button."
+msgstr ""
+
+#: syndication.module:264
+msgid "You may also subscribe all terms on this site."
+msgstr ""
+
+#: syndication.module:304
+msgid "Generate feed"
+msgstr ""
+
+#: syndication.module:354
+msgid "Username not found."
+msgstr ""
+
+#: syndication.module:363
+msgid "In addition to displaying RSS feeds, <i>%sn</i> offers <a href=\"!link\">this OPML</a> which lists all RSS feeds that are collected here."
+msgstr ""
+
+#: syndication.module:434
+msgid "Columns"
+msgstr ""
+
+#: syndication.module:436
+msgid "The number of columns to use on the display page?"
+msgstr ""
+
+#: syndication.module:445
+msgid "Should be blogs be included on the syndication page?"
+msgstr ""
+
+#: syndication.module:455
+msgid "Should be front page atom feed be included on the syndication page?"
+msgstr ""
+
+#: syndication.module:464
+msgid "Should be aggregator OPML feed be included on the syndication page?"
+msgstr ""
+
+#: syndication.module:475
+msgid "Vocabularies"
+msgstr ""
+
+#: syndication.module:478
+msgid "Select the vocabularies which should appear in the <em>Categories</em> block on the <a href=\"@syndication\">syndication page</a>"
+msgstr ""
+
+#: syndication.module:482
+msgid "Taxonomy terms with no nodes"
+msgstr ""
+
+#: syndication.module:483
+msgid "Do not show terms which are not used by any nodes"
+msgstr ""
+
+#: syndication.module:483
+msgid "Show terms which are not used by any nodes"
+msgstr ""
+
+#: syndication.module:500
+msgid "Select the views which should appear in the <em>Views</em> block on the <a href=\"@syndication\">syncidation page</a>"
+msgstr ""
+
+#: syndication.module:517
+msgid "Other"
+msgstr ""
+
+#: syndication.module:520
+msgid "Select the other feeds which should appear in the <em>Other</em> block on the <a href=\"@syndication\">syncidation page</a>"
+msgstr ""
+
+#: syndication.module:536
+msgid "Adds a Syndication block, links to more feeds"
+msgstr ""
+
+#: syndication.module:17
+msgid "RSS feeds"
+msgstr ""
+
+#: syndication.module:23
+msgid "RSS feed syndication"
+msgstr ""
+
+#: syndication.module:29
+msgid "RSS feed builder"
+msgstr ""
+
+#: syndication.module:35
+msgid "All feeds"
+msgstr ""
+
+#: syndication.module:0
+msgid "syndication"
+msgstr ""
+
+#: syndication.info:0
+msgid "Syndication"
+msgstr ""
+
+#: syndication.info:0
+msgid "Module to consolidate RSS feeds on to a single page."
+msgstr ""
+

@@ -1,0 +1,4 @@
+; $Id$
+name = Portfolio
+description = A block module that displays articles of the type portfolio.
+core = 6.x

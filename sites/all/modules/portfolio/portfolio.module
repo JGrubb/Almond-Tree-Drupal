@@ -1,0 +1,114 @@
+<?php
+// $Id$
+
+/**
+* Display help and module information
+* @param path which path of the site we're displaying help
+* @param arg array that holds the current path as would be returned from arg() function
+* @return help text for the path
+*/
+function portfolio_help($path, $arg) {
+  $output = '';  //declare your output variable
+  switch ($path) {
+    case "admin/help#portfolio":
+      $output = '<p>'.  t("A block module that displays articles of the type portfolio.") .'</p>';
+      break;
+  }
+  return $output;
+} // function portfolio_help
+
+/**
+* Valid permissions for this module
+* @return array An array of valid permissions for the onthisdate module
+*/
+function portfolio_perm() {
+  return array('access portfolio content');
+} // function portfolio_perm()
+
+/**
+* Implementation of hook_block().
+* @param string $op one of "list", "view", "save" and "configure"
+* @param integer $delta code to identify the block
+* @param array $edit only for "save" operation
+*/
+function portfolio_block($op = 'list', $delta = 0, $edit = array()) { 
+  if($op == "list") {
+    $block = array();
+    $block[0]["info"] = t('Portfolio');
+	
+    return $block;
+  }
+  else if ($op == 'view') {
+		if (arg(0)=='node' && is_numeric(arg(1))) {
+			$node =  node_load(arg(1));
+			$node_id = $node->nid;
+		} 
+		
+		$previews .= '<div class="previews"><h1>Portfolio</h1><ul>';
+		
+		$p_query = "SELECT ctp.nid, ctp.field_order_value, ctp.field_thumbnail_fid, ctp.field_full_image_fid, nr.title, nr.body, nr.teaser FROM content_type_portfolio ctp LEFT JOIN node_revisions nr ON ctp.nid = nr.nid AND ctp.vid = nr.vid ORDER BY ctp.field_order_value LIMIT 9";
+		$p_result = db_query($p_query);
+
+		while ($ptf = db_fetch_object($p_result)) {		
+			// get thumbnail image url
+			if($ptf->field_thumbnail_fid != '') {
+				$t_query = "SELECT filepath FROM files WHERE fid = $ptf->field_thumbnail_fid AND status = 1 LIMIT 1";
+				$t_result = db_query($t_query);
+				
+				$t_image = db_fetch_object($t_result);
+				$thumb_url = strip_tags(l($t_image->filepath));
+			}
+			else {
+				$thumb_url = 'none';
+			}
+			
+			// get full image url
+			if($ptf->field_full_image_fid != '') {
+				$f_query = "SELECT filepath FROM files WHERE fid = $ptf->field_full_image_fid AND status = 1 LIMIT 1";
+				$f_result = db_query($f_query);
+				
+				$f_image = db_fetch_object($f_result);
+				$full_url = strip_tags(l($f_image->filepath));
+			}
+			else {
+				$full_url = 'none';
+			}
+			
+			if($ptf->nid == $node_id) {
+				$curr_image = $full_url;
+				$curr_title = $ptf->title;
+				
+				$previews .= '<li><div class="active"><a href="/node/' . $ptf->nid . '" title="' . $ptf->title . '">';
+			}
+			else {
+				$previews .= '<li><div><a href="/node/' . $ptf->nid . '" title="' . $ptf->title . '">';
+			}
+			
+			$previews .= '<img src="/' . $thumb_url . '" alt="' . $ptf->title . '" /></a></div></li>';
+		}
+		
+		$block_content = '<div class="selected_item"><div class="image">';
+		$block_content .= '<img src="/' . $curr_image . '" alt="' . $curr_title . '" />';
+		$block_content .= '</div></div>';
+		
+		$previews .= '</ul></div><div class="clear"></div>';
+		
+		$block_content .= $previews;
+		
+		// check to see if there was any content before returning
+		// the block view
+		if($block_content == '') {
+			$block['subject'] = 'Portfolio';
+			$block['content'] = 'There are currently no portfolio entries';
+			
+			return $block;
+		}
+		
+		// set up the block 
+		$block = array();
+		$block['subject'] = 'Portfolio'; 
+		$block['content'] = $block_content;
+		
+		return $block;
+  }
+} // function portfolio_block
